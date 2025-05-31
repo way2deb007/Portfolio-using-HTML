@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deb Dev Website</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        /* font-size: 62.5%; */
+        font-family: "jost", sans-serif;
+        background-color: white;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      li,
+      p,
+      label {
+        font-family: Urbanist;
+        letter-spacing: 0.06;
+        line-height: 1.6;
+        font-size: 1.4rem;
+      }
+      audio {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+      }
+      progress {
+        height: 2rem;
+        width: 20rem;
+      }
+
+      /* ul,
+      .service-section .service-gallery {
+        display: flex;
+        gap: 1rem;
+      } */
+    </style>
+</head>
+<body>
+    <!-- Our Head-->
+     <header>
+        <div class="logo">
+            <a href="#" tabindex="_blank">
+                <img src="logo.jpg" alt="Deb Dev Logo" height="150" width="320">
+            </a>
+        </div>
+        <nav>
+            <ul style="list-style: nont; display: flex; gap: 30px;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Spectrum</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+     <!-- Our first Hero section-->
+      <main>
+        <div class="hero-content" >
+            <h1>Hi! I am Deb</h1>
+            <p>
+                This website is all about my portfolio, my areas of work and my expertise. 
+            </p>
+            <button onclick="window.open('https://drive.google.com/file/d/112NV9H7BP0CQYPbvAEveldMB57RFCawL/view?usp=sharing', '_blank');">See My CV</button>
+            <button onclick="window.open('https://github.com/way2deb007', '_blank');">See my Github</button>
+        </div>
+        <!--Hero Section Images-->
+        <div class="hero-image">
+            <figure>
+                <img src="hero.png" height="350" width=a>
+            </figure>
+        </div>
+      </main>
+
+      <!--About Section-->
+      <section class="about-section">
+        <h2>About Deb </h2>
+        <div class="about-content">
+            <p>It's great to meet you! Hi! I'm Deb</p>
+            <p>I am Full Stack Developer, who is on a mission to learn a wide range of things under the spectrum of computer science. It's crazy
+                to learn how things works in the real world and implement them in the most crazy way possible optimally.
+            </p>
+            <p><strong>My arsenal:</strong></p>
+            <div class="about-progress">
+                <label for="HTML">HTML:</label>
+                <progress id="HTML" max="100" value="95"></progress>
+            </div>
+            <div class="about-progress">
+                <label for="CSS">CSS:</label>
+                <progress id="CSSL" max="100" value="90"></progress>
+            </div>
+            <div class="about-progress">
+                <label for="JAVASCRIPT">JAVASCRIPT:</label>
+                <progress id="HTML" max="100" value="80"></progress>
+            </div>
+            <div class="about-progress">
+                <label for="Nodejs">Node.js:</label>
+                <progress id="Nodejs" max="100" value="85"></progress>
+            </div>
+            <div class="about-progress">
+                <label for="React">React:</label>
+                <progress id="React" max="100" value="95"></progress>
+            </div>
+        </div>
+      </section>
+
+      <!--Spectrum Section-->
+      <div class="spectrum-section">
+        <h2>Tech Spectrum</h2>
+        <div class="tech-galary" style="display:flex">
+            <figure>
+                <img src="frontend.jpg" alt="p1" height="125">
+                <figcaption>Front End Development</figcaption>
+            </figure>
+            <figure>
+                <img src="backend.png" alt="p1" height="125">
+                <figcaption>Back End Development</figcaption>
+            </figure>
+            <figure>
+                <img src="devops.png" alt="p1" height="125">
+                <figcaption>Dev-Ops</figcaption>
+            </figure>
+        </div>
+      </div>
+      <!--  Contact Us Section-->
+      <section class="contact-section">
+        <h2>Feel Free to contact</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.9073680610513!2d87.11278428565292!3d23.598213645707055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f71108adc59c8d%3A0x6ccd1333b10a2114!2sK.D.%20SARANI%20DURGAPUJA%20MANDAP!5e0!3m2!1sen!2sin!4v1748441256452!5m2!1sen!2sin" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <!--form section-->
+      <form>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username"/>
+        </div>
+        <div>
+            <label for="email">Enter your Email</label>
+            <input type="email" id="email"/>
+        </div>
+        <div>
+            <label for="textarea">Message</label>
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="submit"/>
+        
+      </form>
+      <!--footer-->
+      <footer>
+        <p>Copyright &copy; 2025 All rights reserved | This template is made by Deb</p>
+      </footer>
+</body>
+</html>
